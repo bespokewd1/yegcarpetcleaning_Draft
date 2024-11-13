@@ -4,73 +4,83 @@ description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'about/'
 eleventyNavigation:
-    key: About Us
-    order: 200
+key: About Us
+order: 200
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
+<link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
+<section id="int-hero">
+    <h1 id="home-h">About Us</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets"
+            loading="eager" width="2500" height="1667">
+    </picture>
 
-    </section>
+</section>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets"
+                    loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house"
+                    loading="lazy" width="400" height="563">
+            </picture>
         </div>
-    </section>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">YEG Carpet Cleaning Services</h2>
+            <p class="cs-text">
+                We’re a small business specializing in steam cleaning, deep cleaning, deodorizing, stain removal, and
+                upholstery cleaning. Trusted in Edmonton, we’re committed to providing top-notch service for your home
+                or business.
+            </p>
+            <p class="cs-text">
+                Founded by two experienced partners, our team is dedicated to creating value through professional steam
+                cleaning, deep cleaning,
+                deodorizing, stain removal, and upholstery services. We take pride in serving both residential and
+                commercial clients, ensuring fresh, spotless, and revitalized spaces in Edmonton.
+            </p>
+            <div class="cs-flex-group">
+                <p class="cs-flex-p">
+                    We believe a clean space isn't just about appearance—it's about comfort, health, and peace of mind.
+                </p>
+                <span class="cs-name">Kelvin Canlas & Benneth Esguerra</span>
+                <span class="cs-job">Owner-Operator</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136"
+                    height="77">
+            </div>
+            <a href="/projects" class="cs-button-solid">Our Clients</a>
+        </div>
+    </div>
+</section>
 
-    {% include 'components/cta.html' %}
+{% include 'components/cta.html' %}
 
 {% endblock %}
