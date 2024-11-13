@@ -216,7 +216,6 @@
   #dark-mode-toggle {
     z-index: 1000;
     position: absolute;
-    top: 0.625rem;
     right: 4.375rem;
     display: block;
     border: none;
