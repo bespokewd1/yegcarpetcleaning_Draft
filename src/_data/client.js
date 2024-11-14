@@ -4,11 +4,11 @@ module.exports = {
     "phoneForTel": "587-335-2755",
     "phoneFormatted": "(587) 335-2755",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
+        "lineOne": "10429 32a Ave NW",
+        "lineTwo": "",
         "city": "Edmonton",
-        "state": "Alberta",
-        "zip": "80206",
+        "state": "AB",
+        "zip": "T6J 4A7",
         "country": "Canada",
         "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
     },

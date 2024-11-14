@@ -589,8 +589,6 @@
         }
 
         &.cs-active {
-            color: var(--primary) !important;
-            
             .cs-ul-wrapper {
                 opacity: 1;
                 visibility: visible;
@@ -608,6 +606,10 @@
                 width: 100%;
             }
         }
+        body.dark-mode #cs-navigation .cs-li-link.cs-active, #cs-navigation .cs-li-link.cs-active{
+            color: var(--primary);
+        }
+        
     }
 }
 
@@ -1400,14 +1402,14 @@
             margin: auto;
             margin-top: (100/16rem);
             width: 96%;
-            font-size: (16/16rem);
+            font-size: 11.2px;
             line-height: (36/16rem);
             color: #fff;
             text-align: center;
 
             a {
                 text-decoration: none;
-                font-size: (16/16rem);
+                font-size: 11.2px;
                 color: var(--primary);
 
                 &:hover {
@@ -1417,7 +1419,7 @@
 
             .copyright {
                 display: block;
-                font-size: (16/16rem);
+                font-size: 11.2px;
             }
         }
     }
