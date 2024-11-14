@@ -167,8 +167,16 @@ eleventyNavigation:
     </div>
     <!--Grey Swirl -->
     <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/swirl-grey.svg" alt="" loading="lazy" decoding="async" width="685" height="685" aria-hidden="true">
-</section>
-                                
+    <script>
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+            for (const item of faqItems) {
+                const onClick = () => {
+                item.classList.toggle('active')
+            }
+            item.addEventListener('click', onClick)
+            }                 
+    </script>
+</section>                    
                                 
 
 {% endblock %}
