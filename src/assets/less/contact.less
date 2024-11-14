@@ -203,7 +203,7 @@
             line-height: 1.2em;
             font-weight: 700;
             margin-bottom: (12/16rem);
-            color: var(--primary);
+            color: var(--secondaryLight);
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -222,7 +222,7 @@
 
         .cs-link {
             &:hover {
-                color: var(--primary);
+                color: var(--secondaryLight);
             }
         }
     }
@@ -293,12 +293,21 @@
                 color: var(--bodyTextColorWhite);
             }
 
+            .cs-header{
+                color: var(--primary);
+            }
+
             .cs-input {
                 background-color: rgba(255, 255, 255, 0.1);
                 color: var(--bodyTextColorWhite);
                 &::placeholder {
                     color: #fff;
                     opacity: 0.5;
+                }
+            }
+            .cs-link {
+                &:hover {
+                    color: var(--primary);
                 }
             }
 
@@ -308,7 +317,6 @@
         }
     }
 }
-
                                 
 
     /*-- -------------------------- -->
