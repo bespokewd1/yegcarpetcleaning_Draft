@@ -358,6 +358,8 @@
     margin-bottom: 2.5rem;
     max-width: 38.8125rem;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   #gallery .cs-image-group {
     display: flex;
