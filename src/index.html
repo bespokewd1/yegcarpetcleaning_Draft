@@ -430,60 +430,58 @@ eleventyNavigation:
     </div>
 </section>
 
+
 <!-- ============================================ -->
 <!--                   Reviews                    -->
 <!-- ============================================ -->
 
-<section id="reviews">
+<section id="reviews-1088">
     <div class="cs-container">
-        <span class="cs-topper">Our Reviews</span>
-        <h2 class="cs-title">Words From Our Customers</h2>
-        <p class="cs-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl.
-            Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
-            ornare. Lorem ipsum dolor sit amet.
-        </p>
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Words From Our Customers</h2>
+        </div>
         <ul class="cs-card-group">
-            <!-- Review 1 -->
             <li class="cs-item">
-                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="profile picture"
-                    width="80" height="80" />
-                <p class="cs-item-p">
-                    Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra
-                    magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat.
-                    Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                <img class="cs-image" src="{{ client.domain }}/assets/images/profile.png" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
+                <p class="cs-item-text">
+                    I hired Yeg Carpet cleaning to clean my Airbnb carpets. They were very professional, did an excellent job and I would definitely use their service again.
                 </p>
-                <span class="cs-reviewer">
-                    Jon Doe
-                    <span class="cs-desc">Homeowner</span>
-                </span>
-                <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96"
-                    height="16" />
+                <div class="cs-flex">
+                    <span class="cs-name">Amir</span>
+                    <span class="cs-desc">November 6, 2024</span>
+                    ⭐⭐⭐⭐⭐
+                </div>
             </li>
-            <!-- Review 2 -->
             <li class="cs-item">
-                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png" alt="profile picture"
-                    width="80" height="80" />
-                <p class="cs-item-p">
-                    Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra
-                    magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat.
-                    Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                <img class="cs-image" src="{{ client.domain }}/assets/images/profile.png" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
+                <p class="cs-item-text">
+                    If you are looking for carpet cleaning services, I will definitely recommend this company. YEG CARPET CLEANING. They were very efficient to remove stains, dirt, debris, and allergens from carpets. Reliable, honest and affordable.
                 </p>
-                <span class="cs-reviewer">
-                    Jane Doe
-                    <span class="cs-desc">Homeowner</span>
-                </span>
-                <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96"
-                    height="16" />
+                <div class="cs-flex">
+                    <span class="cs-name">Relly</span>
+                    <span class="cs-desc">November 4, 2024</span>
+                    ⭐⭐⭐⭐⭐
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-image" src="{{ client.domain }}/assets/images/profile.png" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
+                <p class="cs-item-text">
+                    The quality of the work was impressive, and I was particularly pleased with the effectiveness of your cleaning machinery. The results exceeded my expectations, leaving my carpets looking refreshed and revitalized.
+                </p>
+                <div class="cs-flex">
+                    <span class="cs-name">Emilio </span>
+                    <span class="cs-desc">November 3, 2024</span>
+                    ⭐⭐⭐⭐⭐
+                </div>
             </li>
         </ul>
-        <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
     </div>
 </section>
+                                
 
 {% include 'components/cta.html' %}
 {% endblock %}
