@@ -223,9 +223,9 @@ Layouts define the wider page structure. The main one used in this kit is `base.
 
 ##### Navigations - Rendering Automatically
 
-One thing you may notice in the `\_includes/header.html` file is the vast amount of Nunjucks code in the `cs-ul-wrapper` element. This is code that makes use of the `eleventyNavigation` object and keys in the frontmatter of all pages that are, by default, added to the kit. This is part of the Eleventy Navigation plugin, which allows us to create scalable navigation menus without having to constantly add new list items and dropdowns to the header whenever a new page is made. If you make a new page using the `\_template.txt` file in `content/pages`, you will be guided to add this information into the front matter, where the navigation will be remade with the new page data automatically.
+One thing you may notice in the `\_includes/header.html` file is the vast amount of Nunjucks code in the `bespoke-ul-wrapper` element. This is code that makes use of the `eleventyNavigation` object and keys in the frontmatter of all pages that are, by default, added to the kit. This is part of the Eleventy Navigation plugin, which allows us to create scalable navigation menus without having to constantly add new list items and dropdowns to the header whenever a new page is made. If you make a new page using the `\_template.txt` file in `content/pages`, you will be guided to add this information into the front matter, where the navigation will be remade with the new page data automatically.
 
-If you wish to use this kit, and benefit from this way of doing navigations but want to swap out the navigation for another one in the CodeStitch template library, you can copy the `cs-ul-wrapper` `<div>` element that's found in the kit and replace the `cs-ul-wrapper` in the new stitch. As the class system is the same with all Stitches, the auto-rendering functionality, including the application of active-style classes and dropdowns (if a "dropdown" Stitch is used) will remain the same.
+If you wish to use this kit, and benefit from this way of doing navigations but want to swap out the navigation for another one in the CodeStitch template library, you can copy the `bespoke-ul-wrapper` `<div>` element that's found in the kit and replace the `bespoke-ul-wrapper` in the new stitch. As the class system is the same with all Stitches, the auto-rendering functionality, including the application of active-style classes and dropdowns (if a "dropdown" Stitch is used) will remain the same.
 
 <a name="nav-manual"></a>
 
@@ -233,12 +233,12 @@ If you wish to use this kit, and benefit from this way of doing navigations but 
 
 Some developers may wish to continue with the "old school" way of rendering navigations and add the HTML for new navigation links to the header individually. This is fine to do too.
 
-One issue that you may run into, however, is the addition of the `cs-active` class to the page that the user is currently on. As the same navigation element is being rendered on all pages, manually adding the `cs-active` class to one of the navigation items will cause that item to be "activated" between all pages.
+One issue that you may run into, however, is the addition of the `bespoke-active` class to the page that the user is currently on. As the same navigation element is being rendered on all pages, manually adding the `bespoke-active` class to one of the navigation items will cause that item to be "activated" between all pages.
 
-To get around this, you will need to manually add some Nunjucks code to each of the navigation items to check the page the user is on and add `cs-active` if that particular page is being viewed. That code would look like this:
+To get around this, you will need to manually add some Nunjucks code to each of the navigation items to check the page the user is on and add `bespoke-active` if that particular page is being viewed. That code would look like this:
 
 ```
-<a href="/contact" class="cs-li-link {% if page.url == '/contact/' %} cs-active {% endif %}">
+<a href="/contact" class="bespoke-li-link {% if page.url == '/contact/' %} bespoke-active {% endif %}">
     Contact
 </a>
 ```
@@ -246,7 +246,7 @@ To get around this, you will need to manually add some Nunjucks code to each of 
 Note the if-check in the `class` attribute of the anchor element. Here, we're checking if `page.url` (the page we're currently on) matches the permalink of the navigation item. Make sure both leading and trailing slashes are used. If this were for the home page, we'd just check for "/", like so:
 
 ```
-<a href="/" class="cs-li-link {% if page.url == '/' %} cs-active {% endif %}">
+<a href="/" class="bespoke-li-link {% if page.url == '/' %} bespoke-active {% endif %}">
     Home
 </a>
 ```

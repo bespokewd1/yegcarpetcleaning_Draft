@@ -16,7 +16,7 @@
     /* Centers button */
     text-align: center;
   }
-  #hero .cs-picture {
+  #hero .bespoke-picture {
     z-index: -2;
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@
     /* Background Image */
     width: 100%;
   }
-  #hero .cs-picture img {
+  #hero .bespoke-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@
     /* Makes image act like a background-image */
     object-fit: cover;
   }
-  #hero .cs-picture:before {
+  #hero .bespoke-picture:before {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
-  #hero .cs-container {
+  #hero .bespoke-container {
     position: relative;
     margin: auto;
     max-width: 80em;
@@ -60,7 +60,7 @@
     /* changes on tablet */
     padding: clamp(9em, 25.95vw, 17.5em) 0;
   }
-  #hero .cs-container:before {
+  #hero .bespoke-container:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +75,7 @@
     height: 100%;
     width: 1px;
   }
-  #hero .cs-flex-group {
+  #hero .bespoke-flex-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,17 +88,17 @@
     width: 80vw;
     box-sizing: border-box;
   }
-  #hero .cs-topper {
+  #hero .bespoke-topper {
     margin-bottom: 1rem;
     color: var(--primary);
     text-align: center;
   }
-  #hero .cs-title {
+  #hero .bespoke-title {
     width: 100%;
     color: var(--bodyTextColorWhite);
     text-align: center;
   }
-  #hero .cs-text {
+  #hero .bespoke-text {
     /* 32px - 40px */
     margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
     /* 40px - 48px */
@@ -106,12 +106,12 @@
     color: var(--bodyTextColorWhite);
     text-align: center;
   }
-  #hero .cs-button-solid {
+  #hero .bespoke-button-solid {
     margin-bottom: 1rem;
     height: initial;
     line-height: clamp(2.875em, 5.5vw, 3.5em);
   }
-  #hero .cs-button-transparent {
+  #hero .bespoke-button-transparent {
     z-index: 1;
     position: relative;
     display: inline-flex;
@@ -132,11 +132,11 @@
     font-weight: 700;
     color: #fff;
   }
-  #hero .cs-button-transparent .cs-img {
+  #hero .bespoke-button-transparent .bespoke-img {
     display: block;
     margin-right: 0.75rem;
   }
-  #hero .cs-button-transparent:before {
+  #hero .bespoke-button-transparent:before {
     z-index: -1;
     position: absolute;
     /* so it sits on top of the border */
@@ -153,7 +153,7 @@
     transition: transform 0.3s;
     transform-origin: left;
   }
-  #hero .cs-button-transparent:hover:before {
+  #hero .bespoke-button-transparent:hover:before {
     transform: scaleX(1);
   }
 }
@@ -163,10 +163,10 @@
     /* 32px - 40px */
     padding: 0 clamp(2em, 5vw, 2.5em);
   }
-  #hero .cs-container {
+  #hero .bespoke-container {
     padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 9.5em) 0;
   }
-  #hero .cs-container:after {
+  #hero .bespoke-container:after {
     position: absolute;
     top: 0;
     right: 0;
@@ -181,7 +181,7 @@
     height: 100%;
     width: 1px;
   }
-  #hero .cs-button-solid {
+  #hero .bespoke-button-solid {
     margin-right: 1.25rem;
     margin-bottom: 0;
   }
@@ -199,7 +199,7 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #hero .cs-background:before {
+  body.dark-mode #hero .bespoke-background:before {
     opacity: 0.8;
   }
 }

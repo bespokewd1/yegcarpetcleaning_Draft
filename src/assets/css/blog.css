@@ -629,23 +629,23 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cs-footer {
+  #bespoke-footer {
     background-color: #1a1a1a;
     /* 60px - 100px top and bottom */
     padding: clamp(3.75em, 7.82vw, 6.25em) 1em;
     font-family: "Roboto", "Arial", sans-serif;
   }
-  #cs-footer .cs-container {
+  #bespoke-footer .bespoke-container {
     margin: auto;
     max-width: 80em;
     width: 100%;
   }
-  #cs-footer .cs-logo-group {
+  #bespoke-footer .bespoke-logo-group {
     position: relative;
     /* takes up all the space, lets the other ul's wrap below it */
     width: 100%;
   }
-  #cs-footer .cs-logo {
+  #bespoke-footer .bespoke-logo {
     display: block;
     /* 28px - 44px */
     margin-bottom: clamp(1.75em, 4.17vw, 2.75em);
@@ -653,32 +653,32 @@
     /* 210px - 240px */
     width: clamp(13.125em, 8vw, 15em);
   }
-  #cs-footer .cs-logo-img {
+  #bespoke-footer .bespoke-logo-img {
     height: auto;
     width: 100%;
   }
-  #cs-footer .cs-text {
+  #bespoke-footer .bespoke-text {
     margin: 0;
     margin-bottom: 2.5rem;
     /* changes to 521px at desktop */
     max-width: 21.5rem;
     color: var(--bodyTextColorWhite);
   }
-  #cs-footer .cs-nav {
+  #bespoke-footer .bespoke-nav {
     margin: 0;
     /* 32px - 40px */
     margin-bottom: clamp(2em, 5.3vw, 2.5em);
     padding: 0;
     padding-left: 1em;
   }
-  #cs-footer .cs-nav-li {
+  #bespoke-footer .bespoke-nav-li {
     list-style: none;
     line-height: 1.5em;
   }
-  #cs-footer .cs-nav-li:last-of-type {
+  #bespoke-footer .bespoke-nav-li:last-of-type {
     margin-bottom: 0;
   }
-  #cs-footer .cs-header {
+  #bespoke-footer .bespoke-header {
     position: relative;
     display: block;
     margin-bottom: 1.25rem;
@@ -687,14 +687,14 @@
     font-weight: 700;
     color: var(--bodyTextColorWhite);
   }
-  #cs-footer .cs-nav-link {
+  #bespoke-footer .bespoke-nav-link {
     position: relative;
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.5em;
     color: var(--bodyTextColorWhite);
   }
-  #cs-footer .cs-nav-link:before {
+  #bespoke-footer .bespoke-nav-link:before {
     position: absolute;
     bottom: calc(-2 / 16 * 1rem);
     left: 0;
@@ -708,21 +708,21 @@
     width: 0%;
     transition: width 0.3s;
   }
-  #cs-footer .cs-nav-link:hover:before {
+  #bespoke-footer .bespoke-nav-link:hover:before {
     width: 100%;
   }
-  #cs-footer .cs-bottom {
+  #bespoke-footer .bespoke-bottom {
     position: relative;
     width: 100%;
     padding-left: 1em;
   }
-  #cs-footer .cs-copyright {
+  #bespoke-footer .bespoke-copyright {
     display: block;
     font-size: 1rem;
     line-height: 1.5em;
     color: #b4b2c7;
   }
-  #cs-footer .cs-social {
+  #bespoke-footer .bespoke-social {
     position: absolute;
     bottom: 0;
     right: 1em;
@@ -731,7 +731,7 @@
     justify-content: flex-start;
     gap: 0.75em;
   }
-  #cs-footer .cs-social-link {
+  #bespoke-footer .bespoke-social-link {
     z-index: 1;
     position: relative;
     display: flex;
@@ -743,11 +743,11 @@
     width: 1.5rem;
     transition: transform 0.3s, background-color 0.3s;
   }
-  #cs-footer .cs-social-link:hover {
+  #bespoke-footer .bespoke-social-link:hover {
     transform: translateY(calc(-3 / 16 * 1rem));
     background-color: var(--primary);
   }
-  #cs-footer .cs-social-img {
+  #bespoke-footer .bespoke-social-img {
     display: block;
     height: 0.8125rem;
     width: auto;
@@ -755,7 +755,7 @@
 }
 /* Inbetween - 600px */
 @media only screen and (min-width: 37.5em) {
-  #cs-footer .cs-container {
+  #bespoke-footer .bespoke-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -766,32 +766,32 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cs-footer .cs-logo-group {
+  #bespoke-footer .bespoke-logo-group {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     /* 20px - 60px */
     margin-bottom: clamp(1.25em, 4vw, 3.75em);
   }
-  #cs-footer .cs-logo {
+  #bespoke-footer .bespoke-logo {
     margin: 0;
   }
-  #cs-footer .cs-text {
+  #bespoke-footer .bespoke-text {
     margin: 0;
     max-width: 32.5625rem;
     width: 50%;
     text-align: right;
   }
-  #cs-footer .cs-nav {
+  #bespoke-footer .bespoke-nav {
     padding: 0;
   }
-  #cs-footer .cs-bottom {
+  #bespoke-footer .bespoke-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
-  #cs-footer .cs-social {
+  #bespoke-footer .bespoke-social {
     position: relative;
     /* reset these positions */
     bottom: auto;

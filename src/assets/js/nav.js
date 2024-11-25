@@ -1,7 +1,7 @@
 // Select DOM elements
 const bodyElement = document.querySelector("body");
-const navbarMenu = document.querySelector("#cs-navigation");
-const hamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
+const navbarMenu = document.querySelector("#bespoke-navigation");
+const hamburgerMenu = document.querySelector("#bespoke-navigation .bespoke-toggle");
 
 // Function to toggle the aria-expanded attribute
 function toggleAriaExpanded(element) {
@@ -11,9 +11,9 @@ function toggleAriaExpanded(element) {
 
 // Function to toggle the menu open or closed
 function toggleMenu() {
-    hamburgerMenu.classList.toggle("cs-active");
-    navbarMenu.classList.toggle("cs-active");
-    bodyElement.classList.toggle("cs-open");
+    hamburgerMenu.classList.toggle("bespoke-active");
+    navbarMenu.classList.toggle("bespoke-active");
+    bodyElement.classList.toggle("bespoke-open");
     toggleAriaExpanded(hamburgerMenu);
 }
 
@@ -22,22 +22,22 @@ hamburgerMenu.addEventListener("click", toggleMenu);
 
 // Add click event listener to the navbar menu to handle clicks on the pseudo-element
 navbarMenu.addEventListener("click", function (event) {
-    if (event.target === navbarMenu && navbarMenu.classList.contains("cs-active")) {
+    if (event.target === navbarMenu && navbarMenu.classList.contains("bespoke-active")) {
         toggleMenu();
     }
 });
 
 // Function to handle dropdown toggle
 function toggleDropdown(element) {
-    element.classList.toggle("cs-active");
-    const dropdownButton = element.querySelector(".cs-dropdown-button");
+    element.classList.toggle("bespoke-active");
+    const dropdownButton = element.querySelector(".bespoke-dropdown-button");
     if (dropdownButton) {
         toggleAriaExpanded(dropdownButton);
     }
 }
 
 // Add event listeners to each dropdown element for accessibility
-const dropdownElements = document.querySelectorAll(".cs-dropdown");
+const dropdownElements = document.querySelectorAll(".bespoke-dropdown");
 dropdownElements.forEach(element => {
     let escapePressed = false;
 
@@ -50,8 +50,8 @@ dropdownElements.forEach(element => {
 
         // If the focus has moved outside the dropdown, remove the active class from the dropdown 
         if (!element.contains(event.relatedTarget)) {
-            element.classList.remove("cs-active");
-            const dropdownButton = element.querySelector(".cs-dropdown-button");
+            element.classList.remove("bespoke-active");
+            const dropdownButton = element.querySelector(".bespoke-dropdown-button");
 
             if (dropdownButton) {
                 toggleAriaExpanded(dropdownButton);
@@ -60,7 +60,7 @@ dropdownElements.forEach(element => {
     });
 
     element.addEventListener("keydown", function (event) {
-        if (element.classList.contains("cs-active")) {
+        if (element.classList.contains("bespoke-active")) {
             event.stopPropagation();
         }
 
@@ -85,7 +85,7 @@ dropdownElements.forEach(element => {
 });
 
 // Pressing Enter will redirect to the href
-const dropdownLinks = document.querySelectorAll(".cs-drop-li > .cs-li-link");
+const dropdownLinks = document.querySelectorAll(".bespoke-drop-li > .bespoke-li-link");
 dropdownLinks.forEach(link => {
     link.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
@@ -96,7 +96,7 @@ dropdownLinks.forEach(link => {
 
 // If you press Escape and the hamburger menu is open, close it
 document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && hamburgerMenu.classList.contains("cs-active")) {
+    if (event.key === "Escape" && hamburgerMenu.classList.contains("bespoke-active")) {
         toggleMenu();
     }
 });

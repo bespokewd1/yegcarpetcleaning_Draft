@@ -9,7 +9,7 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
+        .bespoke-container {
             width: 100%;
             /* changes to 1280px at desktop */
             max-width: (550/16em);
@@ -21,11 +21,11 @@
             gap: (52/16rem);
         }
 
-        .cs-content {
+        .bespoke-content {
             text-align: left;
         }
 
-        .cs-form {
+        .bespoke-form {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -33,7 +33,7 @@
             gap: (12/16rem);
         }
 
-        .cs-label {
+        .bespoke-label {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             width: 100%;
@@ -45,7 +45,7 @@
             gap: (4/16rem);
         }
 
-        .cs-input {
+        .bespoke-input {
             font-size: (16/16rem);
             width: 100%;
             height: (56/16rem);
@@ -63,14 +63,14 @@
             }
         }
 
-        .cs-textarea {
+        .bespoke-textarea {
             min-height: (120/16rem);
             padding-top: (24/16rem);
             margin-bottom: (12/16rem);
             font-family: inherit;
         }
 
-        .cs-button-solid {
+        .bespoke-button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -110,7 +110,7 @@
             }
         }
 
-        .cs-submit {
+        .bespoke-submit {
             text-transform: uppercase;
             width: (283/16rem);
             color: #ffffff;
@@ -123,7 +123,7 @@
             }
         }
 
-        .cs-right {
+        .bespoke-right {
             width: 100%;
             /* 16px - 24px */
             padding: clamp(1rem, 3.5vw, 1.5rem);
@@ -139,7 +139,7 @@
             gap: clamp(1.5rem, 4vw, 2rem);
         }
 
-        .cs-map {
+        .bespoke-map {
             width: 100%;
             /* 300px - 425px */
             height: clamp(18.75rem, 63.4vw, 26.5625rem);
@@ -180,7 +180,7 @@
             }
         }
 
-        .cs-contact-group {
+        .bespoke-contact-group {
             padding: 0;
             margin: 0;
             display: flex;
@@ -190,7 +190,7 @@
             gap: (16/16rem);
         }
 
-        .cs-item {
+        .bespoke-item {
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -198,7 +198,7 @@
             align-items: flex-start;
         }
 
-        .cs-header {
+        .bespoke-header {
             font-size: (20/16rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -210,8 +210,8 @@
             gap: (4/16rem);
         }
 
-        .cs-link,
-        .cs-hours {
+        .bespoke-link,
+        .bespoke-hours {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             line-height: 1.5em;
@@ -220,7 +220,7 @@
             transition: color 0.3s;
         }
 
-        .cs-link {
+        .bespoke-link {
             &:hover {
                 color: var(--secondaryLight);
             }
@@ -231,7 +231,7 @@
 /* Tablet - 650px */
 @media only screen and (min-width: 40.625rem) {
     #contact-322 {
-        .cs-contact-group {
+        .bespoke-contact-group {
             width: 100%;
             flex-direction: row;
             justify-content: space-between;
@@ -242,37 +242,37 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #contact-322 {
-        .cs-container {
+        .bespoke-container {
             max-width: (1280/16rem);
             flex-direction: row;
             justify-content: space-between;
             gap: (52/16rem);
         }
 
-        .cs-content {
+        .bespoke-content {
             max-width: (522/16rem);
         }
 
-        .cs-title,
-        .cs-topper {
+        .bespoke-title,
+        .bespoke-topper {
             text-align: left;
             margin-left: 0;
         }
 
-        .cs-title {
+        .bespoke-title {
             max-width: (522/16rem);
         }
 
-        .cs-email,
-        .cs-phone {
+        .bespoke-email,
+        .bespoke-phone {
             width: 48%;
         }
 
-        .cs-button-solid {
+        .bespoke-button-solid {
             margin-left: 0;
         }
 
-        .cs-right {
+        .bespoke-right {
             width: 51.6%;
             max-width: (658/16rem);
             /* prevent flexbox from squishing it */
@@ -285,19 +285,19 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #contact-322 {
-            .cs-title {
+            .bespoke-title {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-label {
+            .bespoke-label {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-header{
+            .bespoke-header{
                 color: var(--primary);
             }
 
-            .cs-input {
+            .bespoke-input {
                 background-color: rgba(255, 255, 255, 0.1);
                 color: var(--bodyTextColorWhite);
                 &::placeholder {
@@ -305,13 +305,13 @@
                     opacity: 0.5;
                 }
             }
-            .cs-link {
+            .bespoke-link {
                 &:hover {
                     color: var(--primary);
                 }
             }
 
-            .cs-right {
+            .bespoke-right {
                 background-color: var(--medium);
             }
         }
@@ -331,7 +331,7 @@
             overflow: hidden;
             z-index: 1;
 
-            .cs-container {
+            .bespoke-container {
                 width: 100%;
                 /* chnages to 1280px at desktop */
                 max-width: (584/16rem);
@@ -344,7 +344,7 @@
                 gap: clamp(2.5rem, 5vw, 3rem);
             }
 
-            .cs-content {
+            .bespoke-content {
                 /* set text align to left if content needs to be left aligned */
                 text-align: center;
                 width: 100%;
@@ -354,11 +354,11 @@
                 align-items: center;
             }
 
-            .cs-title {
+            .bespoke-title {
                 margin: 0;
             }
 
-            .cs-faq-group {
+            .bespoke-faq-group {
                 padding: 0;
                 margin: 0;
                 display: flex;
@@ -368,7 +368,7 @@
                 gap: (16/16rem);
             }
 
-            .cs-faq-item {
+            .bespoke-faq-item {
                 list-style: none;
                 width: 100%;
                 background-color: #f7f7f7;
@@ -378,7 +378,7 @@
 
                 &.active {
                     background-color: #1a1a1a;
-                    .cs-button {
+                    .bespoke-button {
                         color: var(--primary);
                         &:before {
                             background-color: var(--primary);
@@ -389,7 +389,7 @@
                             transform: rotate(-315deg);
                         }
                     }
-                    .cs-number {
+                    .bespoke-number {
                         background-color: #1a1a1a;
                         color: var(--primary);
                         &:before {
@@ -402,7 +402,7 @@
                         }
                     }
 
-                    .cs-item-p {
+                    .bespoke-item-p {
                         height: auto;
                         /* 16px - 24px */
                         padding-top: clamp(1rem, 2.5vw, 1.5rem);
@@ -413,7 +413,7 @@
                 }
             }
 
-            .cs-button {
+            .bespoke-button {
                 /* 16px - 20px */
                 font-size: clamp(1rem, 2vw, 1.25rem);
                 line-height: 1.2em;
@@ -476,7 +476,7 @@
                 }
             }
 
-            .cs-number {
+            .bespoke-number {
                 font-size: (20/16rem);
                 line-height: 1.5em;
                 /* 52px - 72px */
@@ -525,14 +525,14 @@
                 }
             }
 
-            .cs-button-text {
+            .bespoke-button-text {
                 width: 90%;
                 /* 16px - 24px */
                 padding: clamp(1rem, 2.5vw, 1.5rem) 0;
                 display: block;
             }
 
-            .cs-item-p {
+            .bespoke-item-p {
                 /* 14px - 16px */
                 font-size: clamp(0.875rem, 1.5vw, 1rem);
                 line-height: 1.5em;
@@ -552,7 +552,7 @@
                     padding-top 0.3s;
             }
 
-            .cs-floater {
+            .bespoke-floater {
                 display: none;
             }
         }
@@ -561,24 +561,24 @@
     /* Desktop - 1024px */
     @media only screen and (min-width: 64rem) {
         #faq-1236 {
-            .cs-container {
+            .bespoke-container {
                 max-width: (1280/16rem);
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: stretch;
             }
 
-            .cs-content {
+            .bespoke-content {
                 text-align: left;
                 align-items: flex-start;
             }
 
-            .cs-faq-group {
+            .bespoke-faq-group {
                 width: 56%;
                 flex: none;
             }
 
-            .cs-floater {
+            .bespoke-floater {
                 width: 55%;
                 max-width: (685/16rem);
                 margin-right: (170/16rem);
@@ -595,33 +595,33 @@
     @media only screen and (min-width: 0rem) {
         body.dark-mode {
             #faq-1236 {
-                .cs-title,
-                .cs-item-p {
+                .bespoke-title,
+                .bespoke-item-p {
                     color: var(--bodyTextColorWhite);
                 }
 
-                .cs-item-p {
+                .bespoke-item-p {
                     opacity: 0.8;
                 }
 
-                .cs-faq-item {
+                .bespoke-faq-item {
                     background-color: rgba(0, 0, 0, 0.2);
                     &.active {
                         background-color: rgba(0, 0, 0, 0.6);
-                        .cs-button {
+                        .bespoke-button {
                             &:before,
                             &:after {
                                 background-color: var(--primary);
                             }
                         }
 
-                        .cs-number {
+                        .bespoke-number {
                             background-color: rgba(0, 0, 0, 0.2);
                         }
                     }
                 }
 
-                .cs-button {
+                .bespoke-button {
                     color: var(--bodyTextColorWhite);
                     &:before,
                     &:after {
@@ -629,12 +629,12 @@
                     }
                 }
 
-                .cs-number {
+                .bespoke-number {
                     background-color: rgba(0, 0, 0, 0.2);
                     color: var(--bodyTextColorWhite);
                 }
 
-                .cs-floater {
+                .bespoke-floater {
                     opacity: 0.1;
                 }
             }

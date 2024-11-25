@@ -9,7 +9,7 @@
     #sbs {
         padding: var(--sectionPadding);
 
-        .cs-container {
+        .bespoke-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -20,7 +20,7 @@
             row-gap: (40/16rem);
         }
 
-        .cs-left {
+        .bespoke-left {
             position: relative;
             height: (636/16em);
             /* using ems so we can use font size to scale the whole section */
@@ -29,7 +29,7 @@
             font-size: ~"min(2.31vw, 0.7em)";
         }
 
-        .cs-picture {
+        .bespoke-picture {
             position: absolute;
             display: block;
             border-radius: (24/16em);
@@ -46,14 +46,14 @@
             }
         }
 
-        .cs-picture1 {
+        .bespoke-picture1 {
             top: 0;
             left: 0;
             height: (581/16em);
             width: (522/16em);
         }
 
-        .cs-picture2 {
+        .bespoke-picture2 {
             bottom: 0;
             right: 0;
             /* 6px - 12px */
@@ -64,22 +64,22 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
         }
 
-        .cs-right {
+        .bespoke-right {
             margin: auto;
             max-width: (542/16rem);
         }
 
-        .cs-topper {
+        .bespoke-topper {
             margin-bottom: (4/16rem);
             text-align: left;
         }
 
-        .cs-title {
+        .bespoke-title {
             max-width: (800/16rem);
             text-align: left;
         }
 
-        .cs-text {
+        .bespoke-text {
             margin-bottom: (16/16rem);
             max-width: (750/16rem);
             color: var(--bodyTextColor);
@@ -90,7 +90,7 @@
             }
         }
 
-        .cs-flex-group {
+        .bespoke-flex-group {
             position: relative;
             border-radius: (16/16rem);
             background-color: #f7f7f7;
@@ -98,7 +98,7 @@
             padding: clamp(1rem, 3vw, 2rem);
         }
 
-        .cs-flex-p {
+        .bespoke-flex-p {
             margin: 0 0 (16/16rem);
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -106,7 +106,7 @@
             color: #353535;
         }
 
-        .cs-name {
+        .bespoke-name {
             display: block;
             margin: 0 0 (4/16rem);
             text-transform: uppercase;
@@ -116,14 +116,14 @@
             color: var(--headerColor);
         }
 
-        .cs-job {
+        .bespoke-job {
             display: block;
             font-size: (14/16rem);
             line-height: 1.5em;
             color: #353535;
         }
 
-        .cs-quote-icon {
+        .bespoke-quote-icon {
             position: absolute;
             bottom: (0/16rem);
             /* 16px - 32px */
@@ -133,7 +133,7 @@
             width: clamp(3.75rem, 10vw, 8.5rem);
         }
 
-        .cs-button-solid {
+        .bespoke-button-solid {
             margin-top: (32/16rem);
         }
     }
@@ -142,18 +142,18 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbs {
-        .cs-container {
+        .bespoke-container {
             flex-flow: row;
             justify-content: space-between;
             gap: (52/16rem);
         }
 
-        .cs-left {
+        .bespoke-left {
             font-size: ~"min(1.2vw, 1em)";
             flex: none;
         }
 
-        .cs-right {
+        .bespoke-right {
             margin: 0;
         }
     }
@@ -163,41 +163,41 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs {
-            .cs-left {
+            .bespoke-left {
                 &:before,
                 &:after {
                     background: var(--accent);
                 }
             }
 
-            .cs-picture2 {
+            .bespoke-picture2 {
                 /* 6px - 12px */
                 border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
                 background-color: var(--dark);
             }
 
-            .cs-topper {
+            .bespoke-topper {
                 color: var(--primaryLight);
             }
 
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-flex-p,
-            .cs-name {
+            .bespoke-title,
+            .bespoke-text,
+            .bespoke-h3,
+            .bespoke-flex-p,
+            .bespoke-name {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-flex-group {
+            .bespoke-flex-group {
                 background-color: var(--accent);
             }
 
-            .cs-job {
+            .bespoke-job {
                 opacity: 0.8;
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-quote-icon {
+            .bespoke-quote-icon {
                 opacity: 0.2;
             }
         }
@@ -214,7 +214,7 @@
     #sbsr-457 {
         padding: var(--sectionPadding);
     }
-    #sbsr-457 .cs-container {
+    #sbsr-457 .bespoke-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
@@ -223,7 +223,7 @@
         justify-content: stretch;
         align-items: center;
     }
-    #sbsr-457 .cs-content {
+    #sbsr-457 .bespoke-content {
         text-align: left;
         width: auto;
         max-width: 40.625rem;
@@ -246,7 +246,7 @@
         position: relative;
         z-index: 10;
     }
-    #sbsr-457 .cs-content:before {
+    #sbsr-457 .bespoke-content:before {
         /* green border top */
         content: "";
         width: 100%;
@@ -259,13 +259,13 @@
         left: 0;
     }
 
-    #sbsr-457 .cs-text {
+    #sbsr-457 .bespoke-text {
         margin-bottom: 1rem;
     }
-    #sbsr-457 .cs-text:last-of-type {
+    #sbsr-457 .bespoke-text:last-of-type {
         margin-bottom: 2rem;
     }
-    #sbsr-457 .cs-button-solid {
+    #sbsr-457 .bespoke-button-solid {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -284,7 +284,7 @@
         /* prevents padding from adding to the width */
         box-sizing: border-box;
     }
-    #sbsr-457 .cs-button-solid:before {
+    #sbsr-457 .bespoke-button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -297,10 +297,10 @@
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #sbsr-457 .cs-button-solid:hover:before {
+    #sbsr-457 .bespoke-button-solid:hover:before {
         width: 100%;
     }
-    #sbsr-457 .cs-picture {
+    #sbsr-457 .bespoke-picture {
         width: 100%;
         height: auto;
         height: 27.6875rem;
@@ -312,7 +312,7 @@
         order: -1;
         position: relative;
     }
-    #sbsr-457 .cs-picture img {
+    #sbsr-457 .bespoke-picture img {
         position: absolute;
         top: 0;
         left: 0;
@@ -323,17 +323,17 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #sbsr-457 .cs-container {
+    #sbsr-457 .bespoke-container {
         padding: 3.75rem 0;
         position: relative;
         align-items: flex-start;
         justify-content: center;
     }
-    #sbsr-457 .cs-content {
+    #sbsr-457 .bespoke-content {
         width: 65%;
         margin: 0;
     }
-    #sbsr-457 .cs-picture {
+    #sbsr-457 .bespoke-picture {
         /* 465px - 617px */
         width: clamp(29.0625rem, 53vw, 38.5625rem);
         position: absolute;
@@ -343,27 +343,27 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #sbsr-457 .cs-content {
+    #sbsr-457 .bespoke-content {
         /* 90px - 108px */
         margin-left: clamp(5rem, 8.5vw, 6.75rem);
     }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-    body.dark-mode #sbsr-457 .cs-content {
+    body.dark-mode #sbsr-457 .bespoke-content {
         background-color: var(--medium);
     }
-    body.dark-mode #sbsr-457 .cs-content:before {
+    body.dark-mode #sbsr-457 .bespoke-content:before {
         background-color: var(--primaryLight);
     }
-    body.dark-mode #sbsr-457 .cs-topper {
+    body.dark-mode #sbsr-457 .bespoke-topper {
         color: var(--primaryLight);
     }
-    body.dark-mode #sbsr-457 .cs-title,
-    body.dark-mode #sbsr-457 .cs-text {
+    body.dark-mode #sbsr-457 .bespoke-title,
+    body.dark-mode #sbsr-457 .bespoke-text {
         color: var(--bodyTextColorWhite);
     }
-    body.dark-mode #sbsr-457 .cs-text {
+    body.dark-mode #sbsr-457 .bespoke-text {
         opacity: 0.7;
     }
 }
