@@ -16,7 +16,7 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
+        .bespoke-container {
             width: 100%;
             max-width: (1280/16rem);
             margin: auto;
@@ -28,7 +28,7 @@
             gap: clamp(3rem, 7vw, 4rem);
         }
 
-        .cs-content {
+        .bespoke-content {
             /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
@@ -41,7 +41,7 @@
             z-index: 10;
         }
 
-        .cs-topper {
+        .bespoke-topper {
             font-size: var(--topperFontSize);
             line-height: 1.2em;
             text-transform: uppercase;
@@ -53,7 +53,7 @@
             display: block;
         }
 
-        .cs-title {
+        .bespoke-title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 900;
@@ -65,7 +65,7 @@
             position: relative;
         }
 
-        .cs-text {
+        .bespoke-text {
             /* 16px - 20px */
             font-size: clamp(1rem, 2.5vw, 1.25rem);
             line-height: 1.5em;
@@ -76,7 +76,7 @@
             color: var(--bodyTextColor);
         }
 
-        .cs-button-solid {
+        .bespoke-button-solid {
             font-size: (16/16rem);
             text-align: center;
             /* 46px - 56px */
@@ -118,7 +118,7 @@
         }
 
 
-        .cs-card-group {
+        .bespoke-card-group {
             width: 100%;
             max-width: (1280/16rem);
             /* changes to -550px at tablet */
@@ -134,7 +134,7 @@
             z-index: 15;
         }
 
-        .cs-item {
+        .bespoke-item {
             text-align: left;
             list-style: none;
             width: 100%;
@@ -150,7 +150,7 @@
             }
         }
 
-        .cs-link {
+        .bespoke-link {
             text-decoration: none;
             /* 24px - 60px top & Bottom */
             /* 24px - 16px top & Bottom */
@@ -161,14 +161,14 @@
             flex-direction: column;
         }
 
-        .cs-icon {
+        .bespoke-icon {
             /* 32px - 40px */
             height: clamp(2rem, 4vw, 2.5rem);
             width: auto;
             margin: 0 0 (16/16rem) 0;
         }
 
-        .cs-h3 {
+        .bespoke-h3 {
             /* 20px - 25px */
             font-size: clamp(1.25rem, 2vw, 1.5625rem);
             font-weight: 700;
@@ -179,7 +179,7 @@
             transition: color 0.3s;
         }
 
-        .cs-item-text {
+        .bespoke-item-text {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             text-align: inherit;
@@ -191,7 +191,7 @@
                 opacity 0.3s;
         }
 
-        .cs-floater-wrapper {
+        .bespoke-floater-wrapper {
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -201,7 +201,7 @@
             z-index: -1;
         }
 
-        .cs-floater {
+        .bespoke-floater {
             width: (1090/16rem);
             height: auto;
             opacity: 0.1;
@@ -211,7 +211,7 @@
             bottom: 0;
         }
 
-        .cs-background {
+        .bespoke-background {
             width: 100%;
             height: 100%;
             display: block;
@@ -258,18 +258,18 @@
         /* 50px - 90px */
         gap: clamp(3.125rem, 10vw, 5.625rem);
 
-        .cs-container {
+        .bespoke-container {
             justify-content: flex-start;
             flex-direction: row;
         }
 
-        .cs-content {
+        .bespoke-content {
             text-align: left;
             width: 60%;
             align-items: flex-start;
         }
 
-        .cs-picture-wrapper {
+        .bespoke-picture-wrapper {
             width: 100%;
             max-width: (1280/16rem);
             height: 100%;
@@ -280,7 +280,7 @@
             transform: translateX(-50%);
         }
 
-        .cs-picture {
+        .bespoke-picture {
             width: 56%;
             /* 50px - 170px */
             margin-right: clamp(3.125rem, 12vw, 10.625rem);
@@ -290,24 +290,24 @@
             z-index: 10;
         }
 
-        .cs-card-group {
+        .bespoke-card-group {
             /* changes to -300px at tablet */
             margin: 0 0 (-550/16rem) 0;
         }
 
-        .cs-item {
-            grid-column: span 6;
+        .bespoke-item {
+            grid-column: span 12;
 
             &:nth-of-type(3) {
                 border-bottom: none;
             }
         }
 
-        .cs-floater-wrapper {
+        .bespoke-floater-wrapper {
             display: block;
         }
 
-        .cs-background {
+        .bespoke-background {
             overflow: hidden;
 
             &:before {
@@ -325,13 +325,13 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #hero-1299 {
-        .cs-card-group {
+        .bespoke-card-group {
             margin: 0 0 (-300/16rem) 0;
             padding: 0;
         }
 
-        .cs-item {
-            grid-column: span 3;
+        .bespoke-item {
+            grid-column: span 4;
             border-bottom: 0;
             border-right: 1px solid #e8e8e8;
 
@@ -339,12 +339,12 @@
                 background-color: #1a1a1a;
                 border-color: #1a1a1a;
 
-                .cs-h3,
-                .cs-item-text {
+                .bespoke-h3,
+                .bespoke-item-text {
                     color: var(--bodyTextColorWhite);
                 }
 
-                .cs-item-text {
+                .bespoke-item-text {
                     opacity: 0.8;
                 }
             }
@@ -354,7 +354,7 @@
             }
         }
 
-        .cs-floater {
+        .bespoke-floater {
             left: 40%;
             right: auto;
             top: auto;
@@ -366,7 +366,7 @@
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #hero-1299 {
-        .cs-picture {
+        .bespoke-picture {
             bottom: (100/16rem);
         }
     }
@@ -375,7 +375,7 @@
 /* Larger Desktop - 1600px (Parallax Effect) */
 @media only screen and (min-width: 100rem) {
     #hero-1299 {
-        .cs-background {
+        .bespoke-background {
             background: url("https://yegcarpetcleaning-draft.netlify.app/assets/images/yeg_cc-hero.webp");
             background-size: cover;
             background-position: center;
@@ -395,20 +395,20 @@
         #hero-1299 {
             background-color: rgba(0, 0, 0, 0.8);
 
-            .cs-title {
+            .bespoke-title {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text {
+            .bespoke-text {
                 color: var(--bodyTextColorWhite);
                 opacity: 0.9;
             }
 
-            .cs-card-group {
+            .bespoke-card-group {
                 background-color: var(--dark);
             }
 
-            .cs-item {
+            .bespoke-item {
                 border-color: rgba(255, 255, 255, 0.1);
                 &:hover {
                     background-color: rgba(0, 0, 0, 0.6);
@@ -416,16 +416,16 @@
                 }
             }
 
-            .cs-h3,
-            .cs-item-text {
+            .bespoke-h3,
+            .bespoke-item-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-item-text {
+            .bespoke-item-text {
                 opacity: 0.8;
             }
 
-            .cs-background {
+            .bespoke-background {
                 opacity: 0.15;
 
                 &:before {
@@ -441,7 +441,7 @@
 @media only screen and (min-width: 48rem) {
     body.dark-mode {
         #hero-1299 {
-            .cs-background {
+            .bespoke-background {
                 opacity: 0.15;
 
                 &:before {
