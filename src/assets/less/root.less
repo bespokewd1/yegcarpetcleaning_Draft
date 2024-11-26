@@ -893,9 +893,11 @@
 
         .bespoke-button-solid {
             display: flex;
+            align-items: center;
 
             .bespoke-icon{
                 max-height: 20px;
+                margin-right: .5rem;
             }
         }
 
@@ -1181,6 +1183,7 @@
         height: 180%;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
+        object-position: left;
     }
     #bespoke-mobile-navigation .bespoke-nav {
         order: 2;
@@ -1427,7 +1430,7 @@
     #bespoke-mobile-navigation .bespoke-call .bespoke-wrapper {
         width: 3.5rem;
         height: 3.5rem;
-        background-color: #CEDFF0;
+        background-color: var(--primary);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1565,7 +1568,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        background-color: #CEDFF0;
+        background-color: var(--primary);
         opacity: 1;
         position: absolute;
         display: block;
@@ -1807,81 +1810,12 @@
     body.dark-mode #bespoke-mobile-navigation .bespoke-bottom-bar {
         background-color: rgba(0, 0, 0, 0.4);
     }
-    body.dark-mode #bespoke-mobile-navigation .bespoke-logo,
-    body.dark-mode #bespoke-mobile-navigation .bespoke-link-icon {
+    #bespoke-mobile-navigation .bespoke-logo,
+    #bespoke-mobile-navigation .bespoke-link-icon {
         /* turns it white */
         filter: grayscale(1) brightness(1000%);
     }
   }
-
-    /*-- -------------------------- -->
-    <-- Mobile Nav Dark Mode Toggle   -->
-    <--- -------------------------- -*/
-
-    /* Mobile 360px */
-    @media only screen and (min-width: 0rem) {
-        body.dark-mode #bespoke-mobile-navigation #dark-mode-toggle .bespoke-sun {
-            transform: translate(-50%, -50%);
-            opacity: 1;
-        }
-        body.dark-mode #bespoke-mobile-navigation #dark-mode-toggle .bespoke-moon {
-            transform: translate(-50%, -150%);
-            opacity: 0;
-        }
-        #bespoke-mobile-navigation #bespoke-navigation.bespoke-active .bespoke-moon {
-            fill: #fff;
-        }
-        #bespoke-mobile-navigation #dark-mode-toggle {
-            display: block;
-            position: absolute;
-            top: 0.625rem;
-            right: 4.375rem;
-            width: 3rem;
-            height: 3rem;
-            background: transparent;
-            border: none;
-            overflow: hidden;
-            padding: 0;
-            z-index: 1000;
-        }
-        #bespoke-mobile-navigation #dark-mode-toggle img,
-        #bespoke-mobile-navigation #dark-mode-toggle svg {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 1.25rem;
-            height: 1.25rem;
-            pointer-events: none;
-        }
-        #bespoke-mobile-navigation #dark-mode-toggle .bespoke-moon {
-            z-index: 2;
-            transition:
-                transform 0.3s,
-                opacity 0.3s;
-        }
-        #bespoke-mobile-navigation #dark-mode-toggle .bespoke-sun {
-            z-index: 1;
-            transform: translate(-50%, 100%);
-            opacity: 0;
-            transition:
-                transform 0.3s,
-                opacity 0.3s;
-        }
-    }
-    /* Desktop - 1024px */
-    @media only screen and (min-width: 64rem) {
-        #bespoke-mobile-navigation #dark-mode-toggle {
-            position: relative;
-            transform: none;
-            top: auto;
-            right: auto;
-            margin: 0 0 0 1.5rem;
-        }
-        #bespoke-mobile-navigation #dark-mode-toggle:hover {
-            cursor: pointer;
-        }
-    }
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->

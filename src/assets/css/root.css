@@ -500,7 +500,7 @@
   body.dark-mode #bespoke-navigation {
     background-color: var(--dark);
   }
-  body.dark-mode #bespoke-navigation .bespoke-logo {
+  #bespoke-navigation .bespoke-logo {
     /* makes it white */
     filter: grayscale(1) brightness(1000%);
   }
