@@ -1477,7 +1477,7 @@
     body.dark-mode #bespoke-mobile-navigation {
         background-color: var(--dark);
     }
-    body.dark-mode #bespoke-mobile-navigation .bespoke-logo {
+    #bespoke-mobile-navigation .bespoke-logo {
         /* makes it white */
         filter: grayscale(1) brightness(1000%);
     }
@@ -1766,8 +1766,11 @@
         line-height: 1.2em;
         font-weight: 700;
         margin: 0;
-        color: var(--bodyTextColorWhite);
+        color: var(--headerColor);
         display: block;
+    }
+    body.dark-mode #bespoke-mobile-navigation .bespoke-call .bespoke-link-content {
+        color: var(--bodyTextColorWhite);
     }
   }
   /* Large Desktop - 1300px */
