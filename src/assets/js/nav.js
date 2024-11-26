@@ -100,3 +100,30 @@ document.addEventListener("keydown", (event) => {
         toggleMenu();
     }
 });
+
+
+
+// add classes for mobile navigation toggling
+var CSbody = document.querySelector("body");
+const CSnavbarMenu = document.querySelector("#bespoke-mobile-navigation");
+const CShamburgerMenu = document.querySelector("#bespoke-mobile-navigation .bespoke-toggle");
+
+CShamburgerMenu.addEventListener('click', function() {
+    CShamburgerMenu.classList.toggle("bespoke-active");
+    CSnavbarMenu.classList.toggle("bespoke-active");
+    CSbody.classList.toggle("bespoke-open");
+    // run the function to check the aria-expanded value
+    ariaExpanded();
+});
+
+// checks the value of aria expanded on the bespoke-ul and changes it accordingly whether it is expanded or not 
+function ariaExpanded() {
+    const csUL = document.querySelector('#bespoke-expanded');
+    const csExpanded = csUL.getAttribute('aria-expanded');
+
+    if (csExpanded === 'false') {
+        csUL.setAttribute('aria-expanded', 'true');
+    } else {
+        csUL.setAttribute('aria-expanded', 'false');
+    }
+}
