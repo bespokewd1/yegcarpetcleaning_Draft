@@ -3231,7 +3231,7 @@
         padding: var(--sectionPadding);
         overflow: hidden;
 
-        .cs-container {
+        .bespoke-container {
             width: 100%;
             /* changes to 1280px at desktop */
             max-width: (550/16rem);
@@ -3244,7 +3244,7 @@
             position: relative;
         }
 
-        .cs-content {
+        .bespoke-content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -3255,14 +3255,14 @@
             align-items: flex-start;
         }
 
-        .cs-text {
+        .bespoke-text {
             margin-bottom: (16/16rem);
             &:last-of-type {
                 margin-bottom: (32/16rem);
             }
         }
 
-        .cs-card-group {
+        .bespoke-card-group {
             width: 100%;
             max-width: (630/16rem);
             margin: 0 0 (32/16rem) 0;
@@ -3273,7 +3273,7 @@
             gap: (24/16rem);
         }
         
-        .cs-li {
+        .bespoke-li {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -3284,7 +3284,7 @@
             gap: clamp(1rem, 2.5vw, 1.25rem);
         }
 
-        .cs-li-picture {
+        .bespoke-li-picture {
             width: (80/16rem);
             height: (80/16rem);
             margin: 0;
@@ -3313,7 +3313,7 @@
             }
         }
 
-        .cs-h3 {
+        .bespoke-h3 {
             font-size: (20/16rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -3322,7 +3322,7 @@
             color: var(--headerColor);
         }
 
-        .cs-li-text {
+        .bespoke-li-text {
             font-size: (16/16rem);
             line-height: 1.5em;
             text-align: left;
@@ -3330,7 +3330,7 @@
             color: var(--bodyTextColor);
         }
 
-        .cs-button-solid {
+        .bespoke-button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -3370,7 +3370,7 @@
             }
         }
 
-        .cs-picture {
+        .bespoke-picture {
             width: 100%;
             max-width: (650/16rem);
             min-height: (362/16rem);
@@ -3397,7 +3397,7 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbs-1443 {
-        .cs-container {
+        .bespoke-container {
             max-width: (1280/16rem);
             flex-direction: row;
             justify-content: space-between;
@@ -3405,12 +3405,12 @@
             position: relative;
         }
 
-        .cs-content {
+        .bespoke-content {
             width: 50%;
             padding: (40/16rem) 0;
         }
 
-        .cs-picture {
+        .bespoke-picture {
             height: auto;
             width: 55%;
         }
@@ -3421,19 +3421,19 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-1443 {
-            .cs-title,
-            .cs-text,
-            .cs-li,
-            .cs-h3, 
-            .cs-li-text {
+            .bespoke-title,
+            .bespoke-text,
+            .bespoke-li,
+            .bespoke-h3, 
+            .bespoke-li-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-li-text, .cs-text {
+            .bespoke-li-text, .bespoke-text {
                 opacity: .8;
             }
 
-            .cs-li-picture {
+            .bespoke-li-picture {
                 background-color: var(--dark);
             }
         }
