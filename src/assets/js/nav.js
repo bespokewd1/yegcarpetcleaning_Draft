@@ -30,14 +30,14 @@ navbarMenu.addEventListener("click", function (event) {
 // Function to handle dropdown toggle
 function toggleDropdown(element) {
     element.classList.toggle("bespoke-active");
-    const dropdownButton = element.querySelector(".bespoke-dropdown-button");
+    const dropdownButton = element.querySelector("#bespoke-navigation .bespoke-dropdown-button");
     if (dropdownButton) {
         toggleAriaExpanded(dropdownButton);
     }
 }
 
 // Add event listeners to each dropdown element for accessibility
-const dropdownElements = document.querySelectorAll(".bespoke-dropdown");
+const dropdownElements = document.querySelectorAll(" #bespoke-navigation.bespoke-dropdown");
 dropdownElements.forEach(element => {
     let escapePressed = false;
 
@@ -51,7 +51,7 @@ dropdownElements.forEach(element => {
         // If the focus has moved outside the dropdown, remove the active class from the dropdown 
         if (!element.contains(event.relatedTarget)) {
             element.classList.remove("bespoke-active");
-            const dropdownButton = element.querySelector(".bespoke-dropdown-button");
+            const dropdownButton = element.querySelector("#bespoke-navigation .bespoke-dropdown-button");
 
             if (dropdownButton) {
                 toggleAriaExpanded(dropdownButton);
@@ -85,7 +85,7 @@ dropdownElements.forEach(element => {
 });
 
 // Pressing Enter will redirect to the href
-const dropdownLinks = document.querySelectorAll(".bespoke-drop-li > .bespoke-li-link");
+const dropdownLinks = document.querySelectorAll("#bespoke-navigation .bespoke-drop-li > .bespoke-li-link");
 dropdownLinks.forEach(link => {
     link.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
