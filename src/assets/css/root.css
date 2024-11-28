@@ -844,7 +844,7 @@
     justify-content: center;
     align-items: center;
     min-height: 30vh;
-    padding-top: 3.125rem;
+    padding-top: 10rem;
   }
   #int-hero picture {
     z-index: -2;
