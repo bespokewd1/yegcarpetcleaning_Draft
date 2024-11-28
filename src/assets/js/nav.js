@@ -107,6 +107,7 @@ document.addEventListener("keydown", (event) => {
 var CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#bespoke-mobile-navigation");
 const CShamburgerMenu = document.querySelector("#bespoke-mobile-navigation .bespoke-toggle");
+const CSmobileDropdown = document.querySelector("#bespoke-mobile-navigation .bespoke-toggle");
 
 CShamburgerMenu.addEventListener('click', function() {
     CShamburgerMenu.classList.toggle("bespoke-active");
@@ -114,6 +115,11 @@ CShamburgerMenu.addEventListener('click', function() {
     CSbody.classList.toggle("bespoke-open");
     // run the function to check the aria-expanded value
     ariaExpanded();
+});
+
+CSmobileDropdown.addEventListener('click', function() {
+    ariaExpanded();
+    this.classList.toggle("bespoke-active");
 });
 
 // checks the value of aria expanded on the bespoke-ul and changes it accordingly whether it is expanded or not 
@@ -127,3 +133,4 @@ function ariaExpanded() {
         csUL.setAttribute('aria-expanded', 'false');
     }
 }
+
