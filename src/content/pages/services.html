@@ -84,18 +84,6 @@ eleventyNavigation:
             </ul>
         </div>
         <!--Floating Arrow-->
-        <!--We wrap it in a picture element wrapper so we can use the wrapper as a box for it to live inside of instead of the section wrapper. This allows us to add overflow:hidden to the wrapper to cut off the graphic at the edge of the screen. If we added overflow:hidden to the section container it would clip the overlapping service cards. So we add this wrapper to allow us to clip only the graphic. -->
-        <picture class="bespoke-floater-wrapper">
-            <img class="bespoke-floater" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-arrow-reversed.svg" alt="graphic" width="956" height="708">
-        </picture>
-        <!--Background Image, background image added in CSS at 1600px wide for parallax effect-->
-        <picture class="bespoke-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 1023px)" srcset="/assets/images/yeg_cc-hero-m.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 1024px)" srcset="/assets/images/yeg_cc-hero.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/yeg_cc-hero.webp" alt="buildings" width="1280" height="568">
-        </picture>
     </section>
 
     <!-- ============================================ -->
